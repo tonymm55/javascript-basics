@@ -1,26 +1,32 @@
 const getNthElement = (index, array) => {
-  // your code here
+  if (index >= array.length) {
+  return array[index - array.length];
+}
+  return array[index];
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.toString();
 };
 
-const csvStringToArray = string => {
-  // your code here
+function csvStringToArray(string) {
+  return string.split(",", 5)
+}
+
+const addToArray = (elementX, arrayX) => {
+  arrayX.push(elementX);
 };
 
-const addToArray = (element, array) => {
-  // your code here
-};
-
-const addToArray2 = (element, array) => {
-  // your code here
+const addToArray2 = (NEWelement, ORIGarray) => {
+  let addToArray3;
+  addToArray3 = ORIGarray.concat(NEWelement);
+  return addToArray3;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+ return array.splice(index,1);
 };
+
 
 const numbersToStrings = numbers => {
   // your code here
