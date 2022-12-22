@@ -1,25 +1,25 @@
 function sayHello (string) {
-return "Hello, " + string + "!"
+  return 'Hello, ' + string + '!'
 };
 
 function uppercase (string) {
-return string.toUpperCase()
+  return string.toUpperCase()
 };
 
 function lowercase (string) {
-return string.toLowerCase()
+  return string.toLowerCase()
 };
 
 function countCharacters (string) {
-return string.length
+  return string.length
 };
 
 function firstCharacter (string) {
-return string.charAt(0)
+  return string.charAt(0)
 };
 
 function firstCharacters (string, n) {
-return string.substring(0,n)
+  return string.substring(0, n)
 };
 
 module.exports = {
@@ -29,4 +29,4 @@ module.exports = {
   countCharacters,
   firstCharacter,
   firstCharacters
-};
+}
