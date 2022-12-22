@@ -56,22 +56,27 @@ if (index >= 0) {
 const elementsStartingWithAVowel = strings => {
   let results = []
   for (let i = 0; i <strings.length; i++) {
-    if ((strings[i].startsWith('a')) || (strings[i].startsWith('e')) || (strings[i].startsWith('i')) || (strings[i].startsWith('o')) || (strings[i].startsWith('u')))
+    if ((strings[i].startsWith('a')) || (strings[i].startsWith('e')) || (strings[i].startsWith('i'))  
+    || (strings[i].startsWith('o')) || (strings[i].startsWith('u')) || (strings[i].startsWith('A')) 
+    || (strings[i].startsWith('E')) || (strings[i].startsWith('I')) || (strings[i].startsWith('O')) 
+    || (strings[i].startsWith('U')))
     results.push(strings[i])
     }
     return results
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s+/g, ''); // Research this solution 
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const sum = numbers.reduce((acc, number) => {return acc + number;
+});
+  return sum
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
 module.exports = {
